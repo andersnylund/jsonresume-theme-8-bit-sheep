@@ -1,4 +1,8 @@
 import { renderToString } from "react-dom/server";
-import { Layout } from "./Layout";
+import { Resume } from "./Resume";
+import { resumeSchema } from "./schema";
 
-export const render = (resume: any) => renderToString(<Layout />);
+export const render = (resume: unknown) => {
+  const parsedResume = resumeSchema.parse(resume);
+  return renderToString(<Resume resume={parsedResume} />);
+};

@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "create-html": "resume export out/resume.html --format html --theme ./dist",
+    "create-pdf": "resume export out/resume.pdf --format pdf --theme ./dist",
     "build": "tsc"
   },
   "private": true,
@@ -13,7 +14,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "resume-cli": "^3.0.8"
+    "resume-cli": "^3.0.8",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
