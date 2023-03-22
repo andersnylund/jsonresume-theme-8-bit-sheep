@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { z } from "zod";
 import { resumeSchema } from "./schema";
 
@@ -6,5 +7,18 @@ interface Props {
 }
 
 export const Resume = ({ resume }: Props) => {
-  return <h1>{resume.basics?.name}</h1>;
+  return (
+    <Container>
+      <StyledH1>{resume.basics?.name}</StyledH1>
+    </Container>
+  );
 };
+
+const Container = styled.div`
+  margin: 32px auto;
+`;
+
+const StyledH1 = styled.h1`
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+`;
