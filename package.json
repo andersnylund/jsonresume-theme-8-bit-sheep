@@ -2,12 +2,22 @@
   "name": "jsonresume-theme-8-bit-sheep",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "create-html": "resume export out/resume.html --format html --theme ./dist",
+    "build": "tsc"
   },
   "private": true,
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "resume-cli": "^3.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.2"
+  }
 }
