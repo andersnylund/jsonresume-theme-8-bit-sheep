@@ -16,7 +16,8 @@ export const Resume = ({ resume }: Props) => {
 };
 
 const Container = styled.div`
-  margin: 32px auto;
+  width: 100%;
+  text-align: center;
 `;
 
 const StyledH1 = styled.h1`
