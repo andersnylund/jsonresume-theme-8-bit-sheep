@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { z } from "zod";
 import { resumeSchema } from "./schema";
