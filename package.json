@@ -5,6 +5,7 @@
   "scripts": {
     "create-html": "resume export out/resume.html --format html --theme ./dist",
     "create-pdf": "resume export out/resume.pdf --format pdf --theme ./dist",
+    "validate": "resume validate",
     "build": "tsc"
   },
   "main": "dist/index.js",
