@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+/**
+ * Schema for resume generated from https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+ * with help of https://stefanterdell.github.io/json-schema-to-zod-react/
+ */
 export const resumeSchema = z
   .object({
     $schema: z

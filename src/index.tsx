@@ -4,8 +4,8 @@ import { ServerStyleSheet } from "styled-components";
 import { Resume } from "./Resume";
 import { resumeSchema } from "./schema";
 
-const sheet = new ServerStyleSheet();
 export const render = (resume: unknown) => {
+  const sheet = new ServerStyleSheet();
   try {
     const parsedResume = resumeSchema.parse(resume);
     const renderResult = renderToString(
