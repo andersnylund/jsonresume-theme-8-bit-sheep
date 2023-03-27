@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "serve": "resume serve --theme ./dist",
     "create-html": "resume export out/resume.html --format html --theme ./dist",
     "create-pdf": "resume export out/resume.pdf --format pdf --theme ./dist",
     "validate": "resume validate",
-    "build": "tsc"
+    "build": "tsc",
+    "build-watch": "tsc --watch"
   },
   "main": "dist/index.js",
   "private": true,

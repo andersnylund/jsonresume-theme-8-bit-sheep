@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { z } from "zod";
+import { GlobalStyle } from "./GlobalStyles";
 import { resumeSchema } from "./schema";
 
 interface Props {
@@ -9,18 +10,15 @@ interface Props {
 
 export const Resume = ({ resume }: Props) => {
   return (
-    <Container>
-      <StyledH1>{resume.basics?.name}</StyledH1>
-    </Container>
+    <>
+      <GlobalStyle />
+      <Layout></Layout>
+    </>
   );
 };
 
-const Container = styled.div`
-  width: 100%;
+const Layout = styled.div`
+  margin: 0 auto;
   text-align: center;
-`;
-
-const StyledH1 = styled.h1`
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 794px;
 `;
